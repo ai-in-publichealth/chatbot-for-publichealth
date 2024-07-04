@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM-driven Chatbot for Public Health Information - Presentation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css">
+    <style>
+        .reveal .slides {
+            text-align: left;
+        }
+        .reveal .slides section {
+            padding: 40px;
+        }
+        .reveal h1, .reveal h2, .reveal h3 {
+            text-transform: none;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .reveal p, .reveal li {
+            line-height: 1.5;
+            color: #ffffff;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        .colorful-bg-1 { background: linear-gradient(45deg, #4a0e0e, #923a3a); }
+        .colorful-bg-2 { background: linear-gradient(45deg, #0e2b4a, #3a6392); }
+        .colorful-bg-3 { background: linear-gradient(45deg, #4a3a0e, #92763a); }
+        .colorful-bg-4 { background: linear-gradient(45deg, #0e4a2b, #3a9269); }
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+        .slide-in-right {
+            transform: translateX(50%);
+            opacity: 0;
+            animation: slideInRight 1s forwards;
+        }
+        @keyframes slideInRight {
+            to { transform: translateX(0); opacity: 1; }
+        }
+        .grow {
+            transform: scale(0);
+            animation: grow 1s forwards;
+        }
+        @keyframes grow {
+            to { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section class="colorful-bg-1">
+                <h1>LLM-driven Chatbot for Public Health Information</h1>
+                <h3 class="fragment fade-in">A Research Proposal</h3>
+                <p class="fragment fade-in">SY Siu</p>
+            </section>
+
+            <section class="colorful-bg-2">
+                <h2>Introduction</h2>
+                <ul>
+                    <li class="fragment">Large Language Models (LLMs) revolutionizing NLP</li>
+                    <li class="fragment">Potential in improving health information access</li>
+                    <li class="fragment">Challenges in applying LLMs to public health</li>
+                </ul>
+            </section>
+
+            <section class="colorful-bg-3">
+                <h2>Literature Review Highlights</h2>
+                <ul>
+                    <li class="fragment">LLM chatbots improve user engagement (Xu et al., 2023)</li>
+                    <li class="fragment">Domain-specific fine-tuning crucial (Chen et al., 2024)</li>
+                    <li class="fragment">Hallucination risks in LLMs (Maynez et al., 2020)</li>
+                    <li class="fragment">RAG techniques reduce inaccuracies (Wang et al., 2024)</li>
+                </ul>
+            </section>
+
+            <section class="colorful-bg-4">
+                <h2>Research Purpose</h2>
+                <p class="fragment">Compare approaches for developing accurate public health chatbots</p>
+                <ul>
+                    <li class="fragment">Explore fine-tuning methods</li>
+                    <li class="fragment">Implement RAG and CoT techniques</li>
+                    <li class="fragment">Develop specialized datasets</li>
+                    <li class="fragment">Comprehensive performance evaluation</li>
+                </ul>
+            </section>
+
+            <section data-auto-animate class="colorful-bg-1">
+                <h2>Methodology</h2>
+                <ul>
+                    <li class="fragment">Base Models: Qwen, Yi</li>
+                    <li class="fragment">Fine-tuning: QLora, prefix tuning, prompt tuning</li>
+                    <li class="fragment">Advanced Techniques: RAG, CoT</li>
+                    <li class="fragment">Custom Datasets</li>
+                    <li class="fragment">Evaluation: MMLU, BLEU, ROUGE, Human evaluation</li>
+                </ul>
+            </section>
+
+            <section data-auto-animate class="colorful-bg-2">
+                <h2>Methodology</h2>
+                <svg width="100%" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100%" height="100%" fill="#0e2b4a" />
+                    
+                    <!-- Boxes -->
+                    <rect x="50" y="50" width="200" height="80" rx="10" fill="#e74c3c" />
+                    <rect x="300" y="50" width="200" height="80" rx="10" fill="#3498db" />
+                    <rect x="550" y="50" width="200" height="80" rx="10" fill="#2ecc71" />
+                    <rect x="50" y="200" width="200" height="80" rx="10" fill="#f39c12" />
+                    <rect x="300" y="200" width="200" height="80" rx="10" fill="#9b59b6" />
+                    <rect x="550" y="200" width="200" height="80" rx="10" fill="#1abc9c" />
+                    <rect x="300" y="350" width="200" height="80" rx="10" fill="#34495e" />
+
+                    <!-- Text -->
+                    <text x="150" y="90" font-family="Arial" font-size="16" fill="white" text-anchor="middle">Base Models</text>
+                    <text x="150" y="110" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Qwen, Yu</text>
+                    
+                    <text x="400" y="90" font-family="Arial" font-size="16" fill="white" text-anchor="middle">Fine-tuning</text>
+                    <text x="400" y="110" font-family="Arial" font-size="14" fill="white" text-anchor="middle">QLora, Prefix, Prompt</text>
+                    
+                    <text x="650" y="90" font-family="Arial" font-size="16" fill="white" text-anchor="middle">Advanced Techniques</text>
+                    <text x="650" y="110" font-family="Arial" font-size="14" fill="white" text-anchor="middle">RAG, CoT</text>
+                    
+                    <text x="150" y="240" font-family="Arial" font-size="16" fill="white" text-anchor="middle">Custom Datasets</text>
+                    <text x="150" y="260" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Public Health Q&A</text>
+                    
+                    <text x="400" y="240" font-family="Arial" font-size="16" fill="white" text-anchor="middle">Model Training</text>
+                    <text x="400" y="260" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Iterative Process</text>
+                    
+                    <text x="650" y="240" font-family="Arial" font-size="16" fill="white" text-anchor="middle">Performance Analysis</text>
+                    <text x="650" y="260" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Metrics Comparison</text>
+                    
+                    <text x="400" y="390" font-family="Arial" font-size="16" fill="white" text-anchor="middle">Final Evaluation</text>
+                    <text x="400" y="410" font-family="Arial" font-size="14" fill="white" text-anchor="middle">MMLU, BLEU, ROUGE, Human</text>
+
+                    <!-- Arrows -->
+                    <line x1="250" y1="90" x2="300" y2="90" stroke="white" stroke-width="2" marker-end="url(#arrowhead)" />
+                    <line x1="500" y1="90" x2="550" y2="90" stroke="white" stroke-width="2" marker-end="url(#arrowhead)" />
+                    <line x1="400" y1="130" x2="400" y2="200" stroke="white" stroke-width="2" marker-end="url(#arrowhead)" />
+                    <line x1="400" y1="280" x2="400" y2="350" stroke="white" stroke-width="2" marker-end="url(#arrowhead)" />
+                </svg>
+            </section>
+
+            <section class="colorful-bg-3">
+                <h2>Research Significance</h2>
+                <ul>
+                    <li class="fragment">Promoting LLM-driven health chatbots</li>
+                    <li class="fragment">Understanding LLM customization</li>
+                    <li class="fragment">Enhancing public health literacy</li>
+                    <li class="fragment">Advancing AI safety in healthcare</li>
+                </ul>
+                <p class="fragment">Developing safe and reliable AI systems for critical health applications</p>
+            </section>
+
+            <section class="colorful-bg-4">
+                <h2>Thank You</h2>
+                <p class="fragment fade-in">Questions and Discussion</p>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            slideNumber: true,
+            transition: 'slide',
+            autoAnimateDuration: 1,
+            autoAnimateEasing: 'ease-out'
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM-driven Chatbot for Public Health Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #8B0000;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            color: #ffffff;
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .back-button {
+            background-color: #A52A2A;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        nav {
+            background-color: #A52A2A;
+            padding: 0.5rem;
+            position: sticky;
+            top: 60px;
+            z-index: 999;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            margin: 0.5rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #8B0000;
+        }
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            background-color: #ffffff;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #8B0000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LLM-driven Chatbot for Public Health Information</h1>
+        <a href="index.html" class="back-button">Back to CV</a>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#presentation">Presentation</a></li>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#literature-review">Literature Review</a></li>
+            <li><a href="#research-purpose">Research Purpose</a></li>
+            <li><a href="#methodology">Methodology</a></li>
+            <li><a href="#significance">Significance</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="presentation" class="section">
+            <h2>Presentation</h2>
+            <a href="presentation.html" class="back-button">Click here</a>
+        </section>
+
+        <section id="introduction" class="section">
+            <h2>Introduction</h2>
+            <p>This research proposal focuses on the development of an LLM-driven chatbot for public health information. Large Language Models (LLMs) have demonstrated remarkable capabilities in natural language processing, opening new possibilities for improving access to health information and enhancing patient engagement.</p>
+            <p>However, the application of general-purpose LLMs in sensitive domains like public health presents unique challenges, particularly in ensuring the accuracy and reliability of the information provided. This project aims to address these challenges and explore the potential of LLMs in public health communication.</p>
+        </section>
+
+        <section id="literature-review" class="section">
+            <h2>Literature Review</h2>
+            <ul>
+                <li>Xu et al. (2023): Demonstrated the potential of LLM-powered chatbots in improving user engagement and information retrieval efficiency in health-related queries.</li>
+                <li>Chen et al. (2024): Investigated the adaptability of LLMs in domain-specific applications through various fine-tuning techniques.</li>
+                <li>Maynez et al. (2020) and Welleck et al. (2021): Highlighted the prevalence and potential risks of hallucinations in large language models.</li>
+                <li>Zhang et al. (2023): Explored the use of knowledge graphs to ground LLM outputs in verified medical information.</li>
+                <li>Wang et al. (2024): Investigated the effectiveness of retrieval-augmented generation (RAG) techniques in reducing hallucinations in health-focused chatbots.</li>
+                <li>Wei et al. (2022): Introduced Chain-of-Thought (CoT) prompting, showing promise in improving the reasoning capabilities of language models.</li>
+            </ul>
+        </section>
+
+        <section id="research-purpose" class="section">
+            <h2>Research Purpose</h2>
+            <p>The primary purpose of this research is to compare different approaches for developing public health chatbots, with a particular focus on mitigating hallucinations and improving accuracy. The study aims to:</p>
+            <ul>
+                <li>Explore various fine-tuning methods for adapting open-source LLMs to the public health domain.</li>
+                <li>Implement and evaluate Retrieval-Augmented Generation (RAG) and Chain-of-Thought (CoT) prompting techniques.</li>
+                <li>Develop and utilize specialized datasets for public health information Q&A.</li>
+                <li>Assess the performance of developed chatbots using established metrics and human evaluation.</li>
+            </ul>
+        </section>
+
+        <section id="methodology" class="section">
+            <h2>Methodology</h2>
+            <ol>
+                <li><strong>Base Models:</strong> Utilize open-source LLMs such as Qwen and Yu.</li>
+                <li><strong>Fine-tuning Methods:</strong> Explore QLora, prefix tuning, and prompt tuning.</li>
+                <li><strong>Advanced Techniques:</strong> Implement RAG and CoT prompting.</li>
+                <li><strong>Dataset Development:</strong> Create two datasets of public health information Q&A.</li>
+                <li><strong>Evaluation Metrics:</strong> Use MMLU benchmark, BLEU, ROUGE, and human evaluation.</li>
+            </ol>
+            <p>The research will follow a systematic approach of model development, fine-tuning, and evaluation to compare the effectiveness of different strategies in creating accurate and reliable public health chatbots.</p>
+        </section>
+
+        <section id="significance" class="section">
+            <h2>Research Significance</h2>
+            <p>This research project holds significance in:</p>
+            <ul>
+                <li>Promoting the use of LLM-driven chatbots in health contexts</li>
+                <li>Understanding LLM customization for specialized settings</li>
+                <li>Enhancing public health literacy</li>
+                <li>Advancing AI safety in healthcare</li>
+            </ul>
+            <p>By focusing on mitigating hallucinations and improving accuracy in health-related contexts, this research contributes to the broader goal of developing safe and reliable AI systems for critical applications. The findings can inform future developments in AI-powered health communication tools and contribute to improved public health outcomes.</p>
+        </section>
+    </main>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
